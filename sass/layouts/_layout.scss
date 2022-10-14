@@ -44,5 +44,60 @@ h1 {
     }
 }
 
+.operation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__title {
+        margin: 30px 0px 30px 30px;
+        @include mobile-only {
+            margin-left: 15px;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    @include tablet-only {
+        flex-direction: column;
+    }
+    &__element {
+        border: 1px solid #F7F7F700;
+        border-radius: 25px 25px 25px 25px;
+        background-color: #F7F7F7;
+        padding: 25px 10px 25px 30px;
+        font-weight: 700;
+        box-shadow: 0px 5px 10px #eee3e3;  
+        display: flex;
+        width: 90%;
+        max-width: 320px;
+        margin-bottom: 20px;
+        @include mobile-only {
+            max-width: 350px;
+        }
+        &:hover {
+            background-color: #9256dc22;
+            cursor: pointer;
+        }
+        }
+}
+
+div > i {
+    margin-right: 30px;
+    padding-top: 2px;
+}
+
+.step {
+    margin: 0px 25px 0px -37px;
+    border: 0px solid $color_primary;
+    border-radius: 25px;
+    background-color: $color_primary;
+    padding: 2px 7px 2px 7px;
+    color: white;
+}
+
 
 
