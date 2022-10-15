@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -116,6 +117,66 @@ div > i {
   background-color: #9356DC;
   padding: 2px 7px 2px 7px;
   color: white;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+}
+.restaurant__title {
+  margin: 30px 0px 30px 30px;
+}
+@media screen and (max-width: 599px) {
+  .restaurant__title {
+    margin-left: 15px;
+    align-items: flex-start;
+  }
+}
+
+.cards-restaurant {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  .cards-restaurant {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 250px;
+  margin: 0px 10px 20px 10px;
+  box-shadow: 0px 5px 10px #eee3e3;
+  border-radius: 25px;
+  max-width: 350px;
+}
+.card-restaurant__img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  height: 180px;
+  object-position: 50% 62%;
+}
+.card-restaurant__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 0px 10px;
+}
+
+.caracteristic__name {
+  font-weight: 700;
+}
+
+.fa-heart {
+  font-size: 22px;
+  margin-top: 5px;
 }
 
 .button {
