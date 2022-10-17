@@ -1,5 +1,4 @@
 h1 {
-    font-weight: 400;
     font-family: $font_title;
     font-size: 35px;
     display: flex;
@@ -44,6 +43,10 @@ h1 {
     }
 }
 
+.button:hover {
+    filter: brightness(1.2);
+}
+
 .operation {
     display: flex;
     flex-direction: column;
@@ -81,6 +84,9 @@ h1 {
         &:hover {
             background-color: #9256dc22;
             cursor: pointer;
+            .step-icon {
+                color: $color_primary;
+            }
         }
         }
 }
@@ -103,6 +109,7 @@ div > i {
     display: flex;
     flex-direction: column;
     background-color: #F7F7F7;
+    padding-bottom: 30px;
     &__title {
         margin: 30px 0px 30px 30px;
         @include mobile-only {
@@ -153,8 +160,65 @@ div > i {
     }
 }
 
-.fa-heart {
+.heart1 {
+    position: absolute;
     font-size: 22px;
     margin-top: 5px;
+    z-index: 1;
+    &:hover {
+        z-index: 0;
+    }
 }
 
+.heart2 {
+    position: relative;
+    color: #F7F7F7;
+    font-size: 22px;
+    margin-top: 5px;
+    &::before {
+        content: "\f004";
+        transition: all 1s;
+    }
+    &:hover {
+        cursor: pointer;
+    background: linear-gradient($color_primary, $color_secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+    }
+}
+
+h3 {
+    font-family: $font_title;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #353535;
+    padding: 20px 0px 30px 20px;
+}
+
+.footer {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fa-utensils {
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.fa-handshake-angle {
+    margin-right: 10px;
+    font-size: 12px;
+}
