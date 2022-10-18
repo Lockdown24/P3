@@ -6,5 +6,9 @@
     cursor: pointer;
     border: 0px solid rgba(0, 0, 0, 0);
     margin-top: 30px;
-    box-shadow: 0px 5px 10px #beb5b5;  
+    box-shadow: 0px 5px 10px #beb5b5; 
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0px 5px 10px #686767;
+    }
 }
