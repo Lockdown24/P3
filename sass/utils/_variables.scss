@@ -2,6 +2,7 @@
 $color_primary: #9356DC;
 $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
+$dark-gray: darken(#f7f7f7, 75%);
 
 //Google-fonts//
 $font_police: 'Roboto', sans-serif;
@@ -12,3 +13,8 @@ $breakpoints: (
   mobile: 599px,
   tablet: 992px
 );
+
+//Others//
+$check-transition-width: 72px;
+$max-dishes: 4;
+$menu-appear-delay: 200ms;

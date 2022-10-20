@@ -9,3 +9,11 @@
       @content;
     }
   }
+
+  @mixin shadow-box($color: darken(#f7f7f7, 20%)) {
+    box-shadow: 0 3px 8px $color;
+}
+
+@mixin check-transition-timing($type){
+  transition: $type 300ms 100ms linear;
+}

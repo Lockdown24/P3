@@ -9,3 +9,65 @@
     text-decoration: none;
     color: black;
   }
+
+  .flex{
+    display: flex;
+}
+
+.header_pages{
+  align-items: center;
+  padding-right: 62px;
+  a{
+      padding: 10px 0px 0px 20px;
+      width: 62px;
+      color: $dark-gray;
+      i{
+          margin: auto;
+          font-size: 1.3rem;
+      }
+  }
+  #title {
+    flex: 1;
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.9rem;
+  }
+}
+ 
+  .loader{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    transform: scale(0);
+    background-color: #f7f7f783;
+    animation: load-background 1.5s 100ms backwards;
+    .spinner{
+        transform: scale(0);
+        font-size: 8rem;
+        color: $color-primary;
+        margin: auto;
+        animation: load-spinner 1.5s 100ms linear backwards;
+    }
+}
+
+@keyframes load-spinner{
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        transform: rotate(1.5turn);
+        opacity: 0;
+    }
+}
+
+@keyframes load-background{
+    0%,100% {
+        transform: scale(1);
+        width: 100vw;
+        height: 100vh;
+    }
+}
