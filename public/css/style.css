@@ -295,6 +295,13 @@ footer {
 .footer {
   color: white;
 }
+@media screen and (max-width: 992px) {
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+}
 
 ul {
   list-style-type: none;
@@ -302,6 +309,11 @@ ul {
   justify-content: space-evenly;
   padding: 0px;
   margin: 0px;
+}
+@media screen and (max-width: 992px) {
+  ul {
+    flex-direction: column;
+  }
 }
 
 .fa-utensils {
@@ -456,11 +468,21 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 992px) {
+  .restaurant {
+    flex-direction: column;
+  }
+}
 .restaurant .restaurant_name {
   width: 100%;
 }
 .restaurant .sub-menu {
   width: 32%;
+}
+@media screen and (max-width: 992px) {
+  .restaurant .sub-menu {
+    width: 100%;
+  }
 }
 .restaurant h2 {
   font-family: "Shrikhand", cursive;

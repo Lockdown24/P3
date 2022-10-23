@@ -21,11 +21,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include tablet-only {
+        flex-direction: column;
+    }
         .restaurant_name{
             width: 100%;
         }
         .sub-menu{
             width: 32%;
+            @include tablet-only {
+                width: 100%;
+            }
         }
         h2{
         font-family: 'Shrikhand', cursive;

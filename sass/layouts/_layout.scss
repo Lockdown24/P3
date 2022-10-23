@@ -212,6 +212,11 @@ footer {
 
 .footer {
     color: white;
+    @include tablet-only {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
 }
 
 ul {
@@ -220,6 +225,9 @@ ul {
     justify-content: space-evenly;
     padding: 0px;
     margin: 0px;
+    @include tablet-only {
+        flex-direction: column;
+    }
 }
 
 .fa-utensils {
