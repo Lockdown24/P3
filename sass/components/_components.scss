@@ -13,7 +13,7 @@
     }
 }
 
-.dishes{
+.dishes {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -24,27 +24,27 @@
     padding: 0;
     position: relative;
     opacity: 0;
-    &__text{
+    &__text {
         width: 80%;
         transform: scaleX(1);
         transform-origin: left;
         @include check-transition-timing(width);
         padding: 13px 0 13px 12px;
         justify-content: space-between;
-        .dish_name{
+        .dish_name {
             font-weight: 600;
             font-size: 1.1rem;
             margin-bottom: 5px;
             white-space: nowrap;
         }
-        p{
+        p {
             margin: 0;
             font-weight: 300;
             font-size: .95rem;
             text-overflow: ellipsis;
         }
     }
-    &__price{
+    &__price {
         align-self: flex-end;
         color: $dark-gray;
         font-weight: 700;
@@ -54,14 +54,14 @@
         transform-origin: right;
         @include check-transition-timing(transform);
     }
-    .check__animation{
+    .check__animation {
         display: flex;
         background-color: $color-tertiary;
         width: 70px;
         transform-origin: right;
         transform: scaleX(0);
         @include check-transition-timing(transform);
-        .anim_icon{
+        .anim_icon {
             color: white;
             font-size: 1.6rem;
             margin: auto;
@@ -70,32 +70,32 @@
             @include check-transition-timing(transform);
         }
     }
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
-    &:hover .dishes__text{
+    &:hover .dishes__text {
         width: 60%;
-        .dish_name, p{
+        .dish_name, p {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
     }
-    &:hover .check__animation{
+    &:hover .check__animation {
         transform: scaleX(1);
     }
-    &:hover .anim_icon{
+    &:hover .anim_icon {
         transform: rotate(360deg);
     }
-    &:hover .dishes__price{
+    &:hover .dishes__price {
         transform: translateX(-$check-transition-width);
     }
 
-    @keyframes menu-load{
+    @keyframes menu-load {
         0% {
             transform: translateY(20px);
         }
-        75%{
+        75% {
             opacity: .5;
         }
         100% {

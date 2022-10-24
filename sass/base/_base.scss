@@ -10,11 +10,11 @@
     color: black;
   }
 
-  .flex{
+  .flex {
     display: flex;
 }
 
-.header_pages{
+.header_pages {
   align-items: center;
   padding-right: 62px;
   a{
@@ -26,18 +26,9 @@
           font-size: 1.3rem;
       }
   }
-  #title {
-    flex: 1;
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.9rem;
-    padding: 20px 0px 10px 0px;
-  }
 }
  
-  .loader{
-    display: flex;
+  .loader {
     position: fixed;
     z-index: 3;
     transform: scale(0);

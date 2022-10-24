@@ -10,7 +10,7 @@
     }
   }
 
-  @mixin shadow-box($color: darken(#f7f7f7, 20%)) {
+  @mixin shadow-box($color: darken($gray, 20%)) {
     box-shadow: 0 3px 8px $color;
 }
 

@@ -2,8 +2,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+@import "./pages/index.scss";
 @import "./layouts/layout";
+@import "./layouts/footer";
 @import "./components/components";
+@import "./layouts/restaurants_menus.scss";
 @import "./pages/a_la_francaise.scss";
 @import "./pages/la_note_enchantee.scss";
 @import "./pages/la_palette_du_gout.scss";
