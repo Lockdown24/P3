@@ -26,3 +26,18 @@
     z-index: 1;
     }
 }
+
+.header_pages {
+    align-items: center;
+    padding-right: 62px;
+    justify-content: center;
+    a{
+      padding: 10px 0px 0px 20px;
+      width: 62px;
+      color: $dark-gray;
+      i{
+        margin: auto;
+        font-size: 1.3rem;
+      }
+  }
+}

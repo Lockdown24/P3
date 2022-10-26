@@ -16,18 +16,10 @@ a {
   display: flex;
 }
 
-.header_pages {
-  align-items: center;
-  padding-right: 62px;
-}
-.header_pages a {
-  padding: 10px 0px 0px 20px;
-  width: 62px;
-  color: #383838;
-}
-.header_pages a i {
-  margin: auto;
-  font-size: 1.3rem;
+h1 {
+  font-family: "Shrikhand", cursive;
+  flex: 1;
+  text-align: center;
 }
 
 .loader {
@@ -262,6 +254,21 @@ div > i {
   -webkit-background-clip: text;
   color: transparent;
   z-index: 1;
+}
+
+.header_pages {
+  align-items: center;
+  padding-right: 62px;
+  justify-content: center;
+}
+.header_pages a {
+  padding: 10px 0px 0px 20px;
+  width: 62px;
+  color: #383838;
+}
+.header_pages a i {
+  margin: auto;
+  font-size: 1.3rem;
 }
 
 footer {

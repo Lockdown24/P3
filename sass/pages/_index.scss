@@ -1,3 +1,39 @@
+.loader {
+    position: fixed;
+    z-index: 3;
+    transform: scale(0);
+    background-color: #f7f7f783;
+    animation: load-background 1.5s 100ms backwards;
+    .spinner{
+        transform: scale(0);
+        font-size: 8rem;
+        color: $color-primary;
+        margin: auto;
+        animation: load-spinner 1.5s 100ms linear backwards;
+    }
+}
+
+@keyframes load-spinner{
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        transform: rotate(1.5turn);
+        opacity: 0;
+    }
+}
+
+@keyframes load-background{
+    0%,100% {
+        transform: scale(1);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 .logo {
     height: 60px;
     justify-content: center;
