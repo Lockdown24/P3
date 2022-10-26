@@ -13,17 +13,14 @@
     color: $gray;
     font-size: 22px;
     margin-top: 5px;
-    &::before {
-        content: "\f004";
-        transition: all 1s;
-    }
+    transition: all 700ms;
     &:hover {
         cursor: pointer;
-    background: linear-gradient($color_primary, $color_secondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    z-index: 1;
+        background: linear-gradient($color_primary, $color_secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        z-index: 1;
     }
 }
 

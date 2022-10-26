@@ -26,7 +26,7 @@ h1 {
   position: fixed;
   z-index: 3;
   transform: scale(0);
-  background-color: rgba(247, 247, 247, 0.5137254902);
+  background-color: rgba(247, 247, 247, 0.6784313725);
   animation: load-background 1.5s 100ms backwards;
 }
 .loader .spinner {
@@ -242,10 +242,7 @@ div > i {
   color: #f7f7f7;
   font-size: 22px;
   margin-top: 5px;
-}
-.heart2::before {
-  content: "\f004";
-  transition: all 1s;
+  transition: all 700ms;
 }
 .heart2:hover {
   cursor: pointer;
