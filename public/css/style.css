@@ -134,13 +134,8 @@ h1 {
 }
 @media screen and (max-width: 992px) {
   .cards__element {
-    width: 100%;
-    max-width: 95%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cards__element {
-    max-width: 350px;
+    width: 90%;
+    max-width: 100%;
   }
 }
 .cards__element:hover {
@@ -163,6 +158,8 @@ div > i {
   background-color: #9356DC;
   padding: 2px 7px 2px 7px;
   color: white;
+  align-items: center;
+  display: flex;
 }
 
 .resto {

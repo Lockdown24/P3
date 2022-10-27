@@ -105,11 +105,10 @@
         max-width: 320px;
         margin-bottom: 20px;
         @include tablet-only {
-            width: 100%;
-            max-width: 95%;
+            width: 90%;
+            max-width: 100%;
         }
         @include mobile-only {
-            max-width: 350px;
         }
         &:hover {
             background-color: #9256dc22;
@@ -133,6 +132,8 @@ div > i {
     background-color: $color_primary;
     padding: 2px 7px 2px 7px;
     color: white;
+    align-items: center;
+    display: flex;
 }
 
 .resto {
