@@ -103,9 +103,10 @@
             opacity: 1;
         }
     }
+
     @for $i from 1 through ($max-dishes){
         &:nth-of-type(#{$i}){
-            animation: menu-load 800ms $menu-appear-delay*$i forwards;
+            animation: menu-load 500ms $menu-appear-delay*$i forwards;
         }
     }
 }

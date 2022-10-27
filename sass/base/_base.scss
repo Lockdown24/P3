@@ -5,14 +5,14 @@
     font-family: $font_police;
   }
 
-  a {
+a {
     text-decoration: none;
     color: black;
   }
 
-  .flex {
+.flex {
     display: flex;
-}
+  }
 
 h1 {
     font-family: $font_title;
