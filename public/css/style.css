@@ -132,6 +132,12 @@ h1 {
   max-width: 320px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 992px) {
+  .cards__element {
+    width: 100%;
+    max-width: 95%;
+  }
+}
 @media screen and (max-width: 768px) {
   .cards__element {
     max-width: 350px;
@@ -179,6 +185,11 @@ div > i {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 992px) {
+  .cards-restaurant {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .cards-restaurant {
     flex-direction: column;
     align-items: center;
